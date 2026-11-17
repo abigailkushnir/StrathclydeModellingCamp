@@ -124,7 +124,7 @@ C_L = sol.y[N_NODES:, :]
 #### plot a few nodes ####
 
 fig, axes = plt.subplots(1, 2, figsize=(11, 4.5))
-for patch in range(0, N_NODES, N_NODES // 6):
+for patch in [41]: # range(0, N_NODES, N_NODES // 6):
     axes[0].plot(sol.t, C_D[patch], label=f"patch {patch}")
     axes[1].plot(sol.t, C_L[patch], label=f"patch {patch}")
 axes[0].set(title="Dura concentration $C_D$", xlabel="Time (hours)", ylabel="Concentration")
