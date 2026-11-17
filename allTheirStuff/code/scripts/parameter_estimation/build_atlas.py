@@ -1,5 +1,5 @@
 import numpy as np
-from src.spatial import spherical_patch_mapping, compute_connectivity
+from allTheirStuff.src.spatial import spherical_patch_mapping, compute_connectivity
 from snakemake.script import snakemake
 from pathlib import Path
 import nibabel as nib

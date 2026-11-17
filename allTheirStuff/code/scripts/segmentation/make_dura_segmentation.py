@@ -8,8 +8,8 @@ from mritk.segmentation import (
 from mritk import MRIData
 import numpy as np
 from scipy.ndimage import binary_dilation
-from src.dura_segmentation import combine_segmentations, segment_dura
-from src.simplified_segmentation import make_simplified_segmentation
+from allTheirStuff.src.dura_segmentation import combine_segmentations, segment_dura
+from allTheirStuff.src.simplified_segmentation import make_simplified_segmentation
 
 wmparc_path = Path(snakemake.input.wmparc)
 csf_path = Path(snakemake.input.csf)

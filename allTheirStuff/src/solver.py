@@ -1,6 +1,6 @@
 from scipy.integrate import solve_ivp
 import numpy as np
-import src.constants as constants
+import allTheirStuff.src.constants as constants
 import scipy.sparse as sp
 import scipy.sparse.linalg as spla
 

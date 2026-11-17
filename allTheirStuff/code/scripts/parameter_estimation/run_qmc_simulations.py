@@ -10,15 +10,15 @@ os.environ["NUMEXPR_NUM_THREADS"] = "1"
 import numpy as np
 import pandas as pd
 from snakemake.script import snakemake
-from src.modeling import (
+from allTheirStuff.src.modeling import (
     fit_CSF_data,
     setup_matrices,
     gamma_func,  # noqa: F401
     double_exp_func,  # noqa: F401
 )
-import src.constants as constants
-from src.qmc import run_qmc
-from src.solver import simulate
+import allTheirStuff.src.constants as constants
+from allTheirStuff.src.qmc import run_qmc
+from allTheirStuff.src.solver import simulate
 from functools import partial
 
 NUM_CORES = snakemake.threads

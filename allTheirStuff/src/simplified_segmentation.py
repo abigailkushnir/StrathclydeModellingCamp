@@ -1,5 +1,5 @@
 import numpy as np
-from src.utils import mask_rois
+from allTheirStuff.src.utils import mask_rois
 from mritk.segmentation import (
     ExtendedFreeSurferSegmentation,
     procedural_freesurfer_lut,

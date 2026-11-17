@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import scipy.sparse.linalg as spla
-import src.constants as constants
+import allTheirStuff.src.constants as constants
 import scipy.sparse as sp
-from src.modeling import setup_matrices
+from allTheirStuff.src.modeling import setup_matrices
 
 # Read simulation outcomes
 df = pd.read_csv(Path(snakemake.input.simulation_outcomes), index_col=0)
